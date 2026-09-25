@@ -8,5 +8,9 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.html',
 })
 export class App {
-  protected readonly title = signal('angular-first');
+  name = 'Sourav Das';
+  email = 'sourav.cbr2016@gmail.com';
+  getCal(a: number, b: number) {
+    return a + b;
+  }
 }
