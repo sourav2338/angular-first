@@ -1,0 +1,9 @@
+<h1>counter app</h1>
+<div style="text-align: center">
+  <h2 class="count">{{ count }}</h2>
+  <div>
+    <button class="btn bg-red" (click)="handleCounter(1)">Increment</button>
+    <button class="btn bg-black" (click)="handleCounter(0)">Reset</button>
+    <button class="btn bg-greeen" (click)="handleCounter(-1)">Decrement</button>
+  </div>
+</div>
