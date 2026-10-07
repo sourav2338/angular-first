@@ -10,4 +10,11 @@ export class EventChecking {
   clickEvent(event: any) {
     console.log('click event hitted', event);
   }
+
+  onMouseEnter() {
+    console.log('Mouse entered the box');
+  }
+  onmouseLeave() {
+    console.log('Mouse left the box');
+  }
 }

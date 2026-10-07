@@ -1,0 +1,26 @@
+<p>User input form</p>
+<div class="form-group">
+  <label>User Name : {{ displayName }}</label>
+  <br />
+  <br />
+
+  <label for="name">Name:</label>
+  <input type="text" value="{{ name }}" (input)="getName($event)" id="name" class="form-control" />
+
+  <br />
+  <br />
+
+  <button (click)="showName()">Submit</button>
+  <button (click)="setName()">Set Name</button>
+  <hr />
+  <h1>Email: {{ email }}</h1>
+  <input
+    type="text"
+    value="{{ email }}"
+    placeholder="Enter Email"
+    class="form-control"
+    #emailField
+  />
+  <button (click)="setEmail()">Set Email</button>
+  <button (click)="getEmail(emailField.value)">Get Email</button>
+</div>

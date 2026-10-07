@@ -3,8 +3,9 @@ import { Login } from './login/login';
 import { ProfileComponent } from './profile/profile';
 import { CounterApp } from './counter-app/counter-app';
 import { EventChecking } from './event-checking/event-checking';
+import { Getsettest } from './getsettest/getsettest';
 @Component({
-  imports: [Login, ProfileComponent, CounterApp, EventChecking],
+  imports: [Login, ProfileComponent, CounterApp, EventChecking, Getsettest],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',
